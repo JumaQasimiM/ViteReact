@@ -1,0 +1,12 @@
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid red;
+}
+.profile img{
+    border-radius: 8px;
+}
