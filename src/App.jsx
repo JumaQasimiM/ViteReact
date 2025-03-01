@@ -1,16 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 // import 'Login.css'
-import Login from './login.jsx'
 
-import Galary from './login.jsx'
+import Test from './login.jsx'
 
 function App() {
   
   return (
     <>
       <div>
-      <Galary />
+      <Test/>
     </div>
       
     </>
