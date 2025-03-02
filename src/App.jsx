@@ -1,19 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-// import 'Login.css'
+import { useState } from "react";
+// import './App.css'
 
-import Test from './login.jsx'
+import Login from "./components/login.jsx";
 
 function App() {
-  
   return (
     <>
+    {/* for fomat codes shif + alt + f */}
       <div>
-      <Test/>
-    </div>
-      
+        <Login />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
