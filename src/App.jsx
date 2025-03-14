@@ -4,12 +4,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Login from "./pages/login/login.jsx";
 import Dashbord from "./pages/dachbord/dachbord.jsx";
+import Service from "./pages/service/service.jsx";
 
 function App() {
   return(
   <Router>
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<Service />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/dashbord" element={<Dashbord />} />
     </Routes>
   </Router>
