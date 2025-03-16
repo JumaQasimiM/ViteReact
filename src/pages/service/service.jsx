@@ -24,7 +24,7 @@ const Service = () => {
     <div className="" style={{ backgroundImage: `url(${background})`,backgroundSize:'cover' ,minHeight:'600px'}}>
       <section
         className="text-center col-md-12 p-3 w-50 border p-1"
-        style={{margin:'0 auto',marginBottom:'-60'}}
+        style={{margin:'0 auto',marginBottom:''}}
         
       >
         <h2 className="m-1 p-1 bg-info">Our Service</h2>
