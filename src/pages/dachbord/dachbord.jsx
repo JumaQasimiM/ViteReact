@@ -31,23 +31,26 @@ const Dashbord = () => {
               <div className="col-md-2 p-3 bg-info mr-3">
                 <h2>Navbar</h2>
                 <ul>
-                    <li className="btn btn-danger m-2">Products List</li>
-                    <li className="btn btn-success m-2">Products List</li>
-                    <li className="btn btn-primary m-2">Products List</li>
-                    <li className="btn btn-danger m-2">Products List</li>
-                    <li className="btn btn-light m-2">Products List</li>
-                    <li className="btn btn-warning m-2">Products List</li>
-                    <li className="btn btn-dark m-2">Products List</li>
-                    <li className="btn btn-danger m-2">Products List</li>
-                    <li className="btn btn-light m-2">Products List</li>
-                    <li className="btn btn-danger m-2">Products List</li>
+                  <li className="btn btn-danger m-2">Products List</li>
+                  <li className="btn btn-success m-2">Products List</li>
+                  <li className="btn btn-primary m-2">Products List</li>
+                  <li className="btn btn-danger m-2">Products List</li>
+                  <li className="btn btn-light m-2">Products List</li>
+                  <li className="btn btn-warning m-2">Products List</li>
+                  <li className="btn btn-dark m-2">Products List</li>
+                  <li className="btn btn-danger m-2">Products List</li>
+                  <li className="btn btn-light m-2">Products List</li>
+                  <li className="btn btn-danger m-2">Products List</li>
                 </ul>
               </div>
               <div className="col-md-10 p-3 bg-primary ">
                 <h2>Dashbord</h2>
-                <button onClick={handleLogout} className="btn btn-info m-1"> Logout</button>
-                <button  className="btn btn-danger m-1"> English</button>
-                <button  className="btn btn-warning m-1"> Persish</button>
+                <button onClick={handleLogout} className="btn btn-info m-1">
+                  {" "}
+                  Logout
+                </button>
+                <button className="btn btn-danger m-1"> English</button>
+                <button className="btn btn-warning m-1"> Persish</button>
               </div>
             </div>
           </div>

@@ -1,43 +1,46 @@
 import React from "react";
-
+import "./Product.css";
+import { useNavigate } from "react-router-dom";
 const Product = () => {
   const products = [
     { id: 1, title: "Laptop", price: "120$" },
     { id: 2, title: "computer", price: "320$" },
     { id: 3, title: "Laptop Core i7", price: "780$" },
-    { id: 4, title: "Laptop", price: "190$" },
   ];
-  const handelClick =(e)=>{
+
+  const navigate = useNavigate();
+  // handel bay
+  const handelBay = (e) => {
     e.preventDefault();
-    if(1===1){
-        
-        alert('Hello');
+    if (!localStorage.getItem("isLogedIn")) {
+      navigate("login");
+    } else {
+      navigate("dashbord");
     }
-  }
-  const List = products.map((product) => (
-    <li key={product.id}>{product.title}</li>
-  ));
+  };
 
   return (
     <>
       {/* create product  */}
       <div className="bg-info">
         <h1 className="text-center">Product List</h1>
-        <>
-        {products.map((product) => (
-         
-          <ul>
-            <li key={product.id}>
-              {product.title} - {product.price}
-            </li>
-          </ul>
-         
-         
-           
-        ))}
-        <button className="btn btn-danger m-4" onClick={handelClick}>create alert</button>
-          
-        </>
+        <div id="show_pro" key={1}>
+          {products.map((product) => (
+            <div className="border p-4 col-md-4" id="pro_list">
+              <div>
+                <h3 key={product.id} className="">
+                  {product.title}
+                </h3>
+                <h3 key={product.id} className="">
+                  {product.price}
+                </h3>
+                <button className="btn btn-success" onClick={handelBay}>
+                  Bay
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

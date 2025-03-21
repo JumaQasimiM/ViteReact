@@ -1,0 +1,16 @@
+#pro_list {
+  display: flex;
+
+  button {
+    width: 120px;
+  }
+}
+#show_pro {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+  #pro_list {
+    flex-basis: 1;
+  }
+}
