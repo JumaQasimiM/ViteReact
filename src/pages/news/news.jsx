@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import NewsItem from "./newsItem.jsx";
 const News = () => {
   const [articels, setArticels] = useState([]);
   // use fackapi
@@ -12,7 +12,9 @@ const News = () => {
   return (
     <div className="container-xl">
       <div className="row">
-        
+        {/* useing props */}
+        <NewsItem isLogedIn={true} title='todys news' description='Helllo firnds how are you'/>
+        {/* useing api */}
         <div className="col-md-4">
           {articels.map((articel) => (
             <div key={articel.id} className="bg-info mb-2">
