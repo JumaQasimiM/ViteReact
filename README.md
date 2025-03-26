@@ -1,4 +1,9 @@
 # React + Vite
+## pages
+1. users
+2. products
+3. news
+4. home
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
