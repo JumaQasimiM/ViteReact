@@ -8,6 +8,7 @@ import Service from "./pages/service/service.jsx";
 import Product from "./pages/prodact/product.jsx";
 import News from "./pages/news/news.jsx";
 import Navbar from "./pages/nav.jsx";
+import UserPage from "./pages/user/userPage.jsx";
 function App() {
   return (
     <Router>
@@ -18,6 +19,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/dashbord" element={<Dashbord />} />
         <Route path="/news" element={<News />} />
+        <Route path="/users" element={<UserPage />} />
+        
       </Routes>
     </Router>
   );

@@ -8,7 +8,6 @@ const NewsItem = (props) => {
   );
 
   const loginNot = <p>Plase login to continue</p>;
-
   return props.isLogedIn ? login : loginNot;
 };
 NewsItem.propsTypes = {
