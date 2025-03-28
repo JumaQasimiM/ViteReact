@@ -10,6 +10,7 @@ import News from "./pages/news/news.jsx";
 import Navbar from "./pages/nav.jsx";
 import UserPage from "./pages/user/userPage.jsx";
 import Home from "./pages/home.jsx"
+import ResjesterForm from "./pages/user/addUser.jsx";
 function App() {
   return (
     <Router>
@@ -23,6 +24,8 @@ function App() {
         <Route path="/dashbord" element={<Dashbord />} />
         <Route path="/news" element={<News />} />
         <Route path="/users" element={<UserPage />} />
+        <Route path="/register" element={<ResjesterForm />} />
+
         
       </Routes>
     </Router>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import ResjesterForm from "../user/addUser";
+import { Link } from "react-router-dom";
 // Loign
 
 function Login() {
@@ -28,13 +29,16 @@ function Login() {
       setError("Email or Password is incorrect!");
     }
   };
+  const handelSingUp =()=>{
+    navigate('/register')
+  }
 
   return (
     <>
       {getDay() !== "Sunday" ? (
         <>
           <div className="container col-md-6 border p-3 mt-2">
-            <h1 className="text-primary text-center">Sing In</h1>
+            <h1 className="text-primary text-center display-3">Sing In</h1>
             {/* style is incomplete just error style */}
 
             {error && (
@@ -83,8 +87,10 @@ function Login() {
               <button type="submit" className="btn btn-primary">
                 Sing In
               </button>
-              <button type="button" className="btn btn-success">
-                Sing Up
+              <button type="button" className="btn btn-success"  onClick={handelSingUp}>
+              {/* <Link to={'/register'} >Sing Up</Link> */}
+              Sing Up
+                
               </button>
             </form>
           </div>
@@ -96,6 +102,7 @@ function Login() {
       )}
     </>
   );
+ 
 }
 
 export default Login;
