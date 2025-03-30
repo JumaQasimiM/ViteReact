@@ -11,10 +11,12 @@ import Navbar from "./pages/nav.jsx";
 import UserPage from "./pages/user/userPage.jsx";
 import Home from "./pages/home.jsx"
 import ResjesterForm from "./pages/user/addUser.jsx";
+import Footer from "./pages/footer.jsx"
 function App() {
   return (
     <Router>
       <Navbar />
+     
       <Routes>
 
         <Route path="/" element={<Home />} />
@@ -28,6 +30,7 @@ function App() {
 
         
       </Routes>
+      <Footer />
     </Router>
   );
 }

@@ -6,7 +6,7 @@
 4. home
 5. login
 6. service
-
+https://themewagon.github.io/tropika/?
    
 ## Live Demo
 

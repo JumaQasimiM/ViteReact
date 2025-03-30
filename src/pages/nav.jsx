@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="text-warning navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="text-warning navbar navbar-expand-lg">
       <h2 className="navbar-brand text-danger" id="logo">REACT </h2>
-      <ul className="container ms-auto">
-        <li className="nav-item">
+      <ul className="container ms-auto list-unstyled">
+        <li className="nav-item hove">
           <Link to="/" className="nav-link">
             Home
           </Link>
@@ -25,6 +25,11 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to="/news" className="nav-link">
             News
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/product" className="nav-link">
+            Product
           </Link>
         </li>
         <li className="nav-item">
