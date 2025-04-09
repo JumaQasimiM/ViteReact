@@ -127,7 +127,7 @@ const ResjesterForm = () => {
         </button>
         </div>
       </form>
-      <p className="bg-warning">Ihre Email : {formData.email}</p>
+      <p className="bg-warning p-3 m-2">Ihre Email : {formData.email}</p>
     </div>
   );
 };
