@@ -38,7 +38,7 @@ function Login() {
       {getDay() !== "Sunday" ? (
         <>
           <div className="container col-md-6 border p-3 mt-2">
-            <h1 className="text-primary text-center display-3">Sing In</h1>
+            <h1 className="text-center display-3">Sing In</h1>
             {/* style is incomplete just error style */}
 
             {error && (
