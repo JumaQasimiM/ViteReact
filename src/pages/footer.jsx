@@ -2,7 +2,7 @@ import logo from "../../src/assets/1.jpg";
 const Footer = () => {
   return (
     <footer className="border-top mt-1">
-      <div className="row text-white p-3 text-center">
+      <div className="row p-3 text-center">
         <div className="col-md-4 p-3">
           <img src={logo} width={220} className="" />
           <h3>Green Power</h3>
@@ -11,22 +11,22 @@ const Footer = () => {
         <div className="col-md-4 p-3">
           <h4>Links</h4>
           <p>
-            <a href="" className="text-white">
+            <a href="" className="">
               Home
             </a>
           </p>
           <p>
-            <a href="" className="text-white">
+            <a href="" className="">
               About
             </a>
           </p>
           <p>
-            <a href="" className="text-white">
+            <a href="" className="">
               Contuct
             </a>
           </p>
           <p>
-            <a href="" className="text-white">
+            <a href="" className="">
               Prduct
             </a>
           </p>
