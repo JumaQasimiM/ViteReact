@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import './App.css'
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
+// import aos
+import AOS  from 'aos';
+import 'aos/dist/aos.css';
 import Login from "./pages/login/login.jsx";
 import Dashbord from "./pages/dachbord/dachbord.jsx";
 import Service from "./pages/service/service.jsx";
@@ -13,6 +16,12 @@ import Home from "./pages/home.jsx"
 import ResjesterForm from "./pages/user/addUser.jsx";
 import Footer from "./pages/footer.jsx"
 function App() {
+  useEffect(()=>{
+    AOS.init({
+      once:true,
+    });
+  },[]);
+
   return (
     <Router>
       <Navbar />
