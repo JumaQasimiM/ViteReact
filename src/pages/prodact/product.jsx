@@ -1,5 +1,6 @@
 import React from "react";
 import "./Product.css";
+import product1 from "../../assets/product1.png";
 import { useNavigate } from "react-router-dom";
 const Product = () => {
   const products = [
@@ -13,7 +14,7 @@ const Product = () => {
   const handelBay = (e) => {
     e.preventDefault();
     if (!localStorage.getItem("isLogedIn")) {
-      navigate("login");
+      navigate("/login");
     } else {
       navigate("dashbord");
     }
@@ -22,26 +23,15 @@ const Product = () => {
   return (
     <>
       {/* create product  */}
-      <div className="bg-info">
-        <h1 className="text-center">Product List</h1>
-        <div id="show_pro" key={1}>
-          {products.map((product) => (
-            <div className="border p-4 col-md-4" id="pro_list">
-              <div>
-                <h3 key={product.id} className="">
-                  {product.title}
-                </h3>
-                <h3 key={product.id} className="">
-                  {product.price}
-                </h3>
-                <button className="btn btn-success" onClick={handelBay}>
-                  Bay
-                </button>
-              </div>
-            </div>
-          ))}
+      <section className="product">
+      <div className="card col-6 text-center">
+        <img src={product1} height={120} width={120}  className="m-auto"/>
+        <div className="card-body">
+          <h1 className="card-title">Computer</h1>
+          <p className="card-text">Lorem,esecm obcaecati asperiores.</p>
         </div>
       </div>
+      </section>
     </>
   );
 };

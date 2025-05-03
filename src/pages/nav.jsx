@@ -1,49 +1,102 @@
 import { Link } from "react-router-dom";
-
+import "./nav.css";
+import { useState } from "react";
 const Navbar = () => {
+  const [isOpen , setIsOpen] = useState(false);
+
+  const toggel_btn = document.querySelector(".toggel_btn");
+  const toggel_btn_icon = document.querySelector(".toggel_btn i");
+  const drop_down_menu = document.querySelector(".drop_down_menu");
+
+  const handelChange_menu = () => {
+
+    drop_down_menu.classList.toggle('open');
+
+    const isOpen = drop_down_menu.classList.contains('open');
+
+    toggel_btn_icon.classList = isOpen
+      ? "fa-solid fa-xmark"
+      : "fa-solid fa-bars";
+
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg">
-      <h2 className="navbar-brand text-success" id="logo">REACT </h2>
-      <ul className="container ms-auto list-unstyled">
-        <li className="nav-item hove">
-          <Link to="/" className="nav-link">
-            Home
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/dashbord" className="nav-link">
-            Dashbord
-          </Link>
-        </li>
+    <div className="header">
+      <div className="navbar fixed-top">
+        <div className="logo">
+          <a href="#">Flower Shop</a>
+        </div>
 
-        <li className="nav-item">
-          <Link to="/service" className="nav-link">
-            Service
+        <ul className="links">
+        <Link to="/" className="">
+           Home
           </Link>
-        </li>
 
-        <li className="nav-item">
-          <Link to="/news" className="nav-link">
-            News
+          <li>
+          <Link to="/" className="">
+            About
           </Link>
         </li>
-        <li className="nav-item">
-          <Link to="/product" className="nav-link">
+          <li>
+          <Link to="/product" className="">
             Product
           </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/users" className="nav-link">
-            Users
+          </li>
+          <li>
+          <Link to="/service" className="">
+            Service
           </Link>
-        </li>
-        <li className="nav-item">
+          </li>
+          <li>
+          <Link to="/news" className="">
+            News
+          </Link>
+          </li>
+          <li>
+          <Link to="/dashbord" className="">
+            Dashbord
+          </Link>
+          </li>
+        </ul>
+        <a href="#" className="action_btn btn btn-outline-success">
+          
           <Link to="/login" className="nav-link">
-            Login
+          <i className="fa-solid fa-right-to-bracket"></i>
           </Link>
+        </a>
+        <div className="toggel_btn" onClick={()=>setIsOpen(!isOpen)}>
+          <i className="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      {/* drop_down menu */}
+      <div className="drop_down_menu">
+        <li>
+          <a href="hero">Home</a>
         </li>
-      </ul>
-    </nav>
+        <li>
+          <a href="service">Service</a>
+        </li>
+        <li>
+          <a href="about">About</a>
+        </li>
+        <li>
+          <a href="Contuct">Contuct us</a>
+        </li>
+        <li>
+          <a href="hero">Home</a>
+        </li>
+        <li>
+          <a href="hero">Home</a>
+        </li>
+        <li>
+          <a href="hero">Home</a>
+        </li>
+        <a href="#" className="action_btn btn btn-outline-success">
+          <span>Login </span>
+          <i class="fa-solid fa-right-to-bracket btn_login p-1"></i>
+        </a>
+      </div>
+    </div>
   );
 };
 

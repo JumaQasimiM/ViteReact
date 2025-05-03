@@ -1,9 +1,9 @@
 import propsTypes from "prop-types";
 const NewsItem = (props) => {
   const login = (
-    <div>
-      <h2>{props.title}</h2>
-      <h2>{props.description}</h2>
+    <div className="border mt-3">
+      <h4>{props.title}</h4>
+      <p>{props.description}</p>
     </div>
   );
 

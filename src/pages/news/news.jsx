@@ -10,27 +10,22 @@ const News = () => {
       .then((data) => setArticels(data.slice(0, 5)));
   }, []);
   return (
-    <div className="row">
+    <div className="row mt-5">
       {/* useing props */}
-      <NewsItem
-        isLogedIn={true}
-        title="todys news"
-        description="Helllo firnds how are you"
-      />
+      <NewsItem isLogedIn={true} title description />
       {/* useing api */}
-      <div className="col-md-4">
+      <div className="col-md-4 text-center">
         {articels.map((articel) => (
-          <div key={articel.id} className="bg-info mb-2">
-            <h4 className="bg-danger ">{articel.title}</h4>
-            <p className="">Body: {articel.body}</p>
+          <div key={articel.id} className="border m-2">
+            <p className="p-1">{articel.title}</p>
+            <hr />
+            <p className="p-1">Body: {articel.body}</p>
+            <button className="btn btn-outline-info btn-sm m-3">read more</button>
           </div>
         ))}
       </div>
-      <div className="col-md-8 border">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-        dolores quidem eos dignissimos dicta laudantium iste, voluptatum natus
-        sapiente, reprehenderit voluptas quam possimus. Voluptatum doloremque,
-        consectetur mollitia dolores itaque magni?
+      <div className="col-md-8">
+        <h1 className="text-center">News detail</h1>
       </div>
     </div>
   );

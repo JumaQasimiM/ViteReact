@@ -11,10 +11,10 @@ import "./home.css";
 const Home = () => {
   return (
     <>
-      <div className="container">
+      <div className="container mt-5">
         {/* first section */}
-        <div className="row align-items-center">
-          <div className="col-md-7" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+        <div className="row align-items-center mt-3" >
+          <div className="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
             <h1>
               Build Your Future <br />
               on the <span className="highlight">Fllower Gruop</span>
@@ -25,14 +25,14 @@ const Home = () => {
               similique asperiores quae sint eos? Eveniet eum tenetur,
               cupiditate adipisci facilis quasi.
             </p>
-            <button className="learn-more">Learn more</button>
+            <button className="btn btn-outline-info">Learn more</button>
           </div>
-          <div className="col-md-5">
-            <img src={first} data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100"/>
+          <div className="col-md-5 order-1 order-md-2">
+            <img src={first} className=""  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100"/>
           </div>
         </div>
         {/* second section -- service*/}
-        <div className="row service" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100">
+        <div className="row service mt-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
           <div className="col-md-6">
             {" "}
             <h3>
@@ -48,30 +48,57 @@ const Home = () => {
         </div>
         {/* service items */}
         <div className="row gap-3 mt-4 service-items">
-          <div className="col-md-3 service-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-            <img src={service1} />
-            <h6> Flowershop's service</h6>
-            <p>
+
+          <div className="col-12 col-md-3 card service-item " data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <img src={service1} className=""/>
+            <div className="card-body">
+            <h6 className="card-title text-center"> Flowershop's service</h6>
+            <p className="card-text text-center">
               Lorem ipsum dolor, sit Lorem ipsum dolor, sit amet amet
               consectetur adipisicing elit.
             </p>
+            {/* btn div */}
+            <div className="d-flex gap-2 card-buttons">
+            <a href="" className="btn btn-outline-primary ">read more</a>
+            <a href="" className="btn btn-outline-secondary">shear  </a>
+            </div>
+            </div>
           </div>
-          <div className="col-md-4 service-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-            <img src={service2}/>
-            <h6> Flowershop's service</h6>
-            <p>
+
+          <div className="col-12 col-md-4 card service-item " data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <img src={service2} className=""/>
+            <div className="card-body">
+            <h6 className="card-title text-center"> Flowershop's service</h6>
+            <p className="card-text text-center">
               Lorem ipsum dolor, sit Lorem ipsum dolor, sit amet amet
               consectetur adipisicing elit.
             </p>
+            {/* btn div */}
+            <div className="d-flex gap-2 card-buttons">
+            <a href="" className="btn btn-outline-primary ">read more</a>
+            <a href="" className="btn btn-outline-secondary">shear  </a>
+            </div>
+            </div>
           </div>
-          <div className="col-md-3 service-item" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
-            <img src={service3} />
-            <h6> Flowershop's service</h6>
-            <p>
+          <div className="col-12 col-md-3 card service-item " data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <img src={service3} className=""/>
+            <div className="card-body">
+            <h6 className="card-title text-center"> Flowershop's service</h6>
+            <p className="card-text text-center">
               Lorem ipsum dolor, sit Lorem ipsum dolor, sit amet amet
               consectetur adipisicing elit.
             </p>
+            {/* btn div */}
+            <div className="d-flex gap-2 card-buttons">
+            <a href="" className="btn btn-outline-primary ">read more</a>
+            <a href="" className="btn btn-outline-secondary">shear  </a>
+            </div>
+            </div>
           </div>
+
+
+         
+         
         </div>
         {/* more section - Product*/}
         <div className="Product row mt-5">
@@ -87,7 +114,7 @@ const Home = () => {
               voluptas deserunt, molestiae hic cum, cumque, praesentium
             </p>
 
-            <button className="btn-cutsom">LEARN MORE</button>
+            <button className="btn btn-outline-success">LEARN MORE</button>
           </div>
         </div>
         {/* more section - Product - 2*/}
@@ -101,8 +128,8 @@ const Home = () => {
               voluptas deserunt, molestiae hic cum, cumque, praesentium
             </p>
 
-            <button className="btn-contuctus">LEARN MORE</button>
-            <button className="btn-contuctus">CONTCUT US</button>
+            <button className="btn btn-outline-info m-1">LEARN MORE</button>
+            <button className="btn btn-outline-primary m-1">CONTCUT US</button>
           </div>
           <div className="col-md-7">
             <img src={service2} alt="" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100"/>
