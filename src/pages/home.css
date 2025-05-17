@@ -2,14 +2,20 @@ img {
   max-width: 100%;
   /* height: 100%; */
 }
+.highlight-logo{
+  color: #f67280;
+  font-size: calc(89%);
+}
+
 .highlight {
   color: #f67280;
   margin-left: 12px;
   font-size: calc(89%);
 }
-p {
+h2 {
   color: #666;
   margin: 20px 0;
+
 }
 
 /* service-items */
@@ -19,23 +25,8 @@ p {
     margin: auto;
   }
 }
-.service-item {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease-in-out forwards;
-}
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-.service-item:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-}
+
 /* card buttons div */
 .card-buttons .btn {
   flex: 1;

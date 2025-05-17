@@ -10,11 +10,15 @@ import Dashbord from "./pages/dachbord/dachbord.jsx";
 import Service from "./pages/service/service.jsx";
 import Product from "./pages/prodact/product.jsx";
 import News from "./pages/news/news.jsx";
-import Navbar from "./pages/nav.jsx";
+
 import UserPage from "./pages/user/userPage.jsx";
 import Home from "./pages/home.jsx"
 import ResjesterForm from "./pages/user/addUser.jsx";
 import Footer from "./pages/footer.jsx"
+
+
+// import Navbar from "./pages/nav.jsx";
+import Navbar from "./components/navbar.jsx"
 function App() {
   useEffect(()=>{
     AOS.init({
