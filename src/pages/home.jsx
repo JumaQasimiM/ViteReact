@@ -13,48 +13,53 @@ const Home = () => {
     <>
       <div className="container mt-5">
         {/* first section */}
-        <div className="row align-items-center mt-3">
-          <div
-            className="col-md-7 order-2 order-md-1 gap-3"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="100"
-          >
-            <h2 className="">
-              Send Love,
-              <span className="highlight">Send Flowers</span>
-              <br />
-              <span className="mt-2">
-                Fresh Flowers Delivered with
-                <span className="highlight">Love</span>
-              </span>
-            </h2>
-            <button className="btn btn-outline-info mt-2">Shop Now</button>
-          </div>
-          <div className="col-md-5 order-1 order-md-2">
-            <img
-              src={first}
-              className=""
-              data-aos="zoom-in"
-              data-aos-duration="1500"
-              data-aos-delay="100"
-            />
-          </div>
-        </div>
-        {/* About us */}
-        {/* more section - Product*/}
-
         <div
           style={{
             backgroundImage: `url(${product1})`,
             backgroundRepeat: "no-repeat",
+            backgroundSize: "400px auto",
+            backgroundPosition: "bottom right",
+            // backgroundAttachment: "fixed",
+            padding: "50px 0px",
+            minHeight: "75vh",
+          }}
+          className=""
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="100"
+        >
+          <h2 className="">
+            Send Love,
+            <span className="highlight">Send Flowers</span>
+            <br />
+            <span className="mt-2">
+              Fresh Flowers Delivered with
+              <span className="highlight">Love</span>
+            </span>
+          </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+            blanditiis, aliquid officiis maxime incidunt repellat, corrupti
+            accusamus voluptatem ipsum quisquam voluptatibus possimus beatae
+            quaerat tempora! Repudiandae dolorum a dolorem quas?
+          </p>
+          <button className="btn btn-outline-info mt-2">Shop Now</button>
+        </div>
+
+        {/* About us */}
+        {/* more section - Product*/}
+
+        <div id="Product"
+          style={{
+            backgroundImage: `url(${product1})`,
+            backgroundRepeat: "no-repeat",
             backgroundSize: "300px auto",
-            backgroundPosition: "top right",
+            backgroundPosition: "bottom right",
             backgroundAttachment: "fixed",
-            backgroundColor:'#29335c',
+            backgroundColor: "#29335c",
             // backgroundColor:'#f9f9f9',
-            padding:'50px',
-            color:'#fff'
+            padding: "50px",
+            color: "#fff",
           }}
           className="Product mt-5"
           data-aos="fade-up"
@@ -63,38 +68,34 @@ const Home = () => {
         >
           <span>TAKE A LOOK</span>
           <h3>Flower Shop</h3>
-          <p data-aos="fade-up"
-          data-aos-duration="1500"
-          data-aos-delay="100">
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
             repellendus nam debitis asperiores velit laboriosam voluptas
-            deserunt, molestiae hic cum, cumque, praesentium
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            repellendus nam debitis asperiores velit laboriosam voluptas
-            deserunt, molestiae hic cum, cumque, praesentium
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            repellendus nam debitis asperiores velit laboriosam voluptas
-            deserunt, molestiae hic cum, cumque, praesentium
+            deserunt, molestiae hic cum, cumque, praesentium Lorem, ipsum dolor
+            sit amet consectetur adipisicing elit. Quibusdam repellendus nam
+            debitis asperiores velit laboriosam voluptas deserunt, molestiae hic
+            cum, cumque, praesentium Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Quibusdam repellendus nam debitis asperiores velit
+            laboriosam voluptas deserunt, molestiae hic cum, cumque, praesentium
           </p>
 
           <button className="btn btn-outline-info ">LEARN MORE</button>
         </div>
 
-       
         {/* service items */}
-        <div className="row gap-3 mt-4 service-items" 
-        
-        style={{
-          backgroundImage: `url(${product1})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "300px auto",
-          backgroundPosition: "bottom left",
-          backgroundAttachment: "fixed",
-          // backgroundColor:'#29335c',
-          backgroundColor:'#5767aa',
-          padding:'50px',
-          color:'#fff',
-        }}
+        <div
+          className="row gap-3 mt-4 service-items"
+          style={{
+            backgroundImage: `url(${product1})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "300px auto",
+            backgroundPosition: "bottom left",
+            backgroundAttachment: "fixed",
+            // backgroundColor:'#29335c',
+            backgroundColor: "#5767aa",
+            padding: "50px",
+            color: "#fff",
+          }}
         >
           <div
             className="col-12 col-md-4 card service-item "
@@ -114,7 +115,6 @@ const Home = () => {
                 <a href="" className="btn btn-outline-primary ">
                   read more
                 </a>
-               
               </div>
             </div>
           </div>
@@ -137,7 +137,6 @@ const Home = () => {
                 <a href="" className="btn btn-outline-primary ">
                   read more
                 </a>
-              
               </div>
             </div>
           </div>
@@ -159,7 +158,6 @@ const Home = () => {
                 <a href="" className="btn btn-outline-primary ">
                   read more
                 </a>
-               
               </div>
             </div>
           </div>
@@ -181,8 +179,8 @@ const Home = () => {
               voluptas deserunt, molestiae hic cum, cumque, praesentium
             </p>
 
-            <button className="btn btn-outline-info m-1">LEARN MORE</button>
-            <button className="btn btn-outline-primary m-1">CONTCUT US</button>
+            <button className="btn btn-outline-info m-3">LEARN MORE</button>
+            <button className="btn btn-outline-primary m-3">CONTCUT US</button>
           </div>
           <div className="col-md-7">
             <img

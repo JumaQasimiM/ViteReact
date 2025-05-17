@@ -1,34 +1,32 @@
-import logo from "../../src/assets/1.jpg";
+import { Link } from "react-router-dom";
+import first from  "../assets/product1.png";
 const Footer = () => {
   return (
     <footer className="border-top mt-1">
       <div className="row p-3 text-center">
-        <div className="col-md-4 p-3">
-          <img src={logo} width={220} className="" />
-          <h3>Green Power</h3>
-          <p className="">Green Power GmbH</p>
+        <div className="col-md-4">
+          <img src={first} width={160} height={160} className="" />
+          <h3>Flowers Shop</h3>
+          <p className="">Flowers Shop GmbH</p>
         </div>
         <div className="col-md-4 p-3">
           <h4>Links</h4>
+         
           <p>
-            <a href="" className="">
-              Home
-            </a>
+          <Link to="/service" className="">
+          Service
+        </Link>
           </p>
           <p>
-            <a href="" className="">
-              About
-            </a>
+          <Link to="/product" className="">
+          Product
+        </Link>
+        
           </p>
           <p>
-            <a href="" className="">
-              Contuct
-            </a>
-          </p>
-          <p>
-            <a href="" className="">
-              Prduct
-            </a>
+          <Link to="/" className="">
+           Home
+          </Link>
           </p>
         </div>
         <div className="col-md-4">
