@@ -25,11 +25,15 @@ const Navbar = () => {
         <Link to="/news" className="">
           News
         </Link>
+        
+        <Link to="/users" className="">
+          Users
+        </Link>
         <Link to="/dashbord" className="">
           Dashbord
         </Link>
-        <Link to="/users" className="">
-          Users
+        <Link to="/login" className="">
+          Login
         </Link>
 
         <button onClick={showNavbar} className="nav-btn btn-close-btn">

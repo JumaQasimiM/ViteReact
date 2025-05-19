@@ -5,6 +5,12 @@
     --SecandrayColor:#DB2839;
     --mainlightColor:#5767aa;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
    
     display: flex;
@@ -14,7 +20,8 @@ header{
     padding: 0 2rem;
     background-color: var(--meinColor);
     color: var(--textColor);
-    position: sticky;
+    width: 100%;
+    
 }
 nav a{
     margin: 0 2rem;
@@ -44,7 +51,7 @@ header .nav-btn{
         position: fixed;
         top: 0;
         left: 0;
-        height: 100%;
+        height: 80%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -54,7 +61,7 @@ header .nav-btn{
         background-color: var(--mainlightColor);
         transition: 1s;
         transform: translateY(-100vh);
-        z-index: 12;
+        z-index: 120;
     }
     header .responsiv_nav{
         transform: none;

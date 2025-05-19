@@ -22,7 +22,7 @@ const Dashbord = () => {
   return (
     <div>
       {message ? (
-        <p>{message}</p>
+        <p className="bg-warning p-4 text-center bold">{message}</p>
       ) : (
         // style is incomplete
         <>
@@ -51,6 +51,7 @@ const Dashbord = () => {
                 </button>
                 <button className="btn btn-danger m-1"> English</button>
                 <button className="btn btn-warning m-1"> Persish</button>
+                <img src="" alt="" />
               </div>
             </div>
           </div>

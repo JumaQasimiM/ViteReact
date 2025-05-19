@@ -29,15 +29,15 @@ function Login() {
       setError("Email or Password is incorrect!");
     }
   };
-  const handelSingUp =()=>{
-    navigate('/register')
-  }
+  const handelSingUp = () => {
+    navigate("/register");
+  };
 
   return (
     <>
       {getDay() !== "Sunday" ? (
         <>
-          <div className="container col-md-6 p-3 mt-5">
+          <div className="container col-md-6 p-3 mt-5" style={{height:'100vh'}}>
             <h1 className="text-center display-3">Sing In</h1>
             {/* style is incomplete just error style */}
 
@@ -87,10 +87,13 @@ function Login() {
               <button type="submit" className="btn btn-primary">
                 Sing In
               </button>
-              <button type="button" className="btn btn-success"  onClick={handelSingUp}>
-              {/* <Link to={'/register'} >Sing Up</Link> */}
-              Sing Up
-                
+              <button
+                type="button"
+                className="btn btn-success"
+                onClick={handelSingUp}
+              >
+                {/* <Link to={'/register'} >Sing Up</Link> */}
+                Sing Up
               </button>
             </form>
           </div>
@@ -102,7 +105,6 @@ function Login() {
       )}
     </>
   );
- 
 }
 
 export default Login;

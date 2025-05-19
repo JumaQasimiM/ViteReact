@@ -14,7 +14,7 @@ const ResjesterForm = () => {
     console.log("Your Data:", formData);
   };
   return (
-    <div className="mt-5">
+    <div className="m-4">
       <h1 className="display-3 text-center">Restration Form</h1>
       <form onSubmit={handerSubmit} className="row g-2">
         <div className="col-md-6">

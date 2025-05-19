@@ -11,7 +11,7 @@ import "./home.css";
 const Home = () => {
   return (
     <>
-      <div className="container mt-5">
+      <div className="container">
         {/* first section */}
         <div
           style={{
@@ -32,11 +32,11 @@ const Home = () => {
             Send Love,
             <span className="highlight">Send Flowers</span>
             <br />
-            <span className="mt-2">
+            <span className="">
               Fresh Flowers Delivered with
               <span className="highlight">Love</span>
             </span>
-          </h2>
+          </h2><br />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
             blanditiis, aliquid officiis maxime incidunt repellat, corrupti
@@ -58,7 +58,7 @@ const Home = () => {
             backgroundAttachment: "fixed",
             backgroundColor: "#29335c",
             // backgroundColor:'#f9f9f9',
-            padding: "50px",
+            padding: "40px",
             color: "#fff",
           }}
           className="Product mt-5"
@@ -67,7 +67,7 @@ const Home = () => {
           data-aos-delay="100"
         >
           <span>TAKE A LOOK</span>
-          <h3>Flower Shop</h3>
+          <h3>About us</h3>
           <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
             repellendus nam debitis asperiores velit laboriosam voluptas

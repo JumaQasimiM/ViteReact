@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import UserCard from "../../components/user";
+import { Link } from "react-router-dom";
 
 const UserPage = () => {
   const [users, setUsers] = useState([]);
@@ -17,7 +18,7 @@ const UserPage = () => {
 
   return (
     <div>
-      <h1>Users List fetch from API</h1>
+      <h1 className="text-center p-3">Users List (from API)</h1>
       {users.length === 0 ? (
         <h1>Loading...</h1>
       ) : (
@@ -27,6 +28,7 @@ const UserPage = () => {
           </div>
         ))
       )}
+      <button className="btn btn-outline-success m-3"><Link to={'/register'}>Add User</Link> </button>
     </div>
   );
 };

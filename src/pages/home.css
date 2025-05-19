@@ -47,6 +47,9 @@ h2 {
 */
 /* Product */
 .Product {
+    background-position: "bottom left";
+  padding: 10px;
+    
   span {
     color: orange;
   }
@@ -54,7 +57,6 @@ h2 {
     text-align: justify;
     text-justify: auto;
   }
-  #Product{
-    backgroundPosition: "bottom right",
-  }
+
+  
 }
